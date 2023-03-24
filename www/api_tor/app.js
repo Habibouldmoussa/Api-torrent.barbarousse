@@ -11,7 +11,7 @@ const providers1 = TorrentSearchApi.getProviders();
 let cherch = '';
 let providers = [];
 let cat = [];
-var catego = [];
+//let catego = [];
 app.get('/torrents', (req, res) => {
   cherch = req.query.cherch;
   if (typeof req.query.prov !== "object") { providers.push(req.query.prov) } else { providers = req.query.prov };
@@ -36,22 +36,30 @@ app.get('/torrents', (req, res) => {
 /* torrent detail */
 app.get('/torrent', (req, res) => {
   torrent = req.query.torrent
-  const result = TorrentSearchApi.getTorrentDetails(torrent).then(result => { res.status(200).json(result) }).catch(error => { res.status(200).json(error) })
+  const result = TorrentSearchApi.getTorrentDetails(torrent)
+    .then(result => { res.status(200).json(result) })
+    .catch(error => { res.status(200).json(error) })
 })
 /* download torrent buffer */
 app.get('/downtorrent', (req, res) => {
   torrent = req.query.torrent
-  const result = TorrentSearchApi.downloadTorrent(torrent).then(result => { res.status(200).json(result); }).catch(error => { res.status(200).json(error) })
+  const result = TorrentSearchApi.downloadTorrent(torrent)
+    .then(result => { res.status(200).json(result); })
+    .catch(error => { res.status(200).json(error) })
 
 })
 /* download torrent */
 app.get('/downtorrentfils', (req, res) => {
   torrent = req.query.torrent
-  const result = TorrentSearchApi.downloadTorrent(torrent, "tmp/" + torrent.title + ".torrent").then(result => { res.status(200).json(result) }).catch(error => { res.status(200).json(error) })
+  const result = TorrentSearchApi.downloadTorrent(torrent, "tmp/" + torrent.title + ".torrent")
+    .then(result => { res.status(200).json(result) })
+    .catch(error => { res.status(200).json(error) })
 })
 app.get('/magnet', (req, res) => {
   torrent = req.query.torrent;
-  const result = TorrentSearchApi.getMagnet(torrent).then(result => { res.status(200).json(result) }).catch(error => { res.status(200).json(error) })
+  const result = TorrentSearchApi.getMagnet(torrent)
+    .then(result => { res.status(200).json(result) })
+    .catch(error => { res.status(200).json(error) })
 })
 
 app.listen(process.env.PORT, function () {
