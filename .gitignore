@@ -40,10 +40,10 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-www/api_tor/*
 
 # TypeScript v1 declaration files
 typings/
+
 
 # TypeScript cache
 *.tsbuildinfo
@@ -103,5 +103,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-www/api_tor/
