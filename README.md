@@ -17,7 +17,7 @@ liste des trackers sur le repo de jimmyLaurent : https://github.com/JimmyLaurent
 
 EXEMPLE DE REQUETE API
 
-https://barbaroussa.alwaysdata.net/www/api_tor/torrents/?cherch=pokemon&prov=Eztv
+https://barbaroussa.alwaysdata.net/www/api_tor/torrents/?cherch=ubuntu&prov=Eztv
 
 ## Deployment
 
