@@ -1,11 +1,11 @@
 # API TORRENT SEARCH ENGIN (Beta)
 
-Api torrent crée a partir du travail de jimmyLaurent#98.
+Torrent API created from the work of JimmyLaurent#98.
 
-api est utilisé dans le but de créer des moteurs de recherche
-liste des trackers sur le repo de jimmyLaurent : https://github.com/JimmyLaurent/torrent-search-api
+api is used for the purpose of creating search engines
+list of trackers on jimmyLaurent's repo : https://github.com/JimmyLaurent/torrent-search-api
 
-![Logo](http://barberousse.tk/under%20construction.png)
+![Logo](https://barbaroussa.alwaysdata.net/www/dev/wp-content/uploads/2024/07/logo_barbaroussa-1.png)
 
 ⵉⵎⴰⵣⵉⵖⵏ
 
@@ -15,28 +15,19 @@ liste des trackers sur le repo de jimmyLaurent : https://github.com/JimmyLaurent
 
 ## API Reference
 
-EXEMPLE DE REQUETE API
+API REQUEST EXAMPLE
 
 https://barbaroussa.alwaysdata.net/www/api_tor/torrents/?cherch=ubuntu&prov=Eztv
 
 ## Deployment
 
-- Installer les dépendances (torrent-search-api, express)
-- Remplacer les fichiers dans le repo de jimmyLaurent#98 comme indiqué dans le dossier api-torrent.barberousse\www\api_tor\modification_node_modules
-- upload dans un environement node.js
-- enjoy
+```
+npm ci
+npm start
+```
 
 ## Features
 
-pour l'instant l'API ne fait qu'afficher la liste des torrents recherché
-avec catégorie
-
 ## Roadmap
-
-- Ajouter torrent unique
-
-- Ajouter le lien de téléchargement
-
-- etc...
 
 Good-hack
