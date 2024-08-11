@@ -1,7 +1,7 @@
 const { error } = require('console');
 const express = require('express')
 const app = express()
-const TorrentSearchApi = require('torrent-search-api');
+const TorrentSearchApi = require('torrent-search-api-for-barbaroussa');
 // Enable public providers
 TorrentSearchApi.enablePublicProviders();
 
