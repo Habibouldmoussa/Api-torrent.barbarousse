@@ -5,7 +5,7 @@ Api torrent crée a partir du travail de jimmyLaurent#98.
 api est utilisé dans le but de créer des moteurs de recherche
 liste des trackers sur le repo de jimmyLaurent : https://github.com/JimmyLaurent/torrent-search-api
 
-![Logo](http://barberousse.tk/under%20construction.png)
+![Logo]([https://barbaroussa.alwaysdata.net/construction.png](https://barbaroussa.alwaysdata.net/under%20construction.png))
 
 ⵉⵎⴰⵣⵉⵖⵏ
 
